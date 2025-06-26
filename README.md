@@ -1,9 +1,16 @@
 
 
-# https://15957165880.github.io/home-page/
+### https://15957165880.github.io/home-page/
 
 
-# 
+###  构建
+
+```bash
+yarn build
+npx gh-pages -d dist
+```
+
+###  vite.config.js
 
 ```js
 // vite.config.js

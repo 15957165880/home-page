@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "copy-cname": "cp CNAME dist/",
+    "deploy": "yarn build && yarn copy-cname && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
